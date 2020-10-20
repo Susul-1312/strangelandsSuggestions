@@ -79,9 +79,9 @@ async function deleteSuggestion(msg, args) {
 			msg.channel.send("Suggestion was deleted");
 		} catch (e) {
 			console.log(e);
-			msg.channel.send(`Seems like there was some weird fucking error, GO FUCK YØURSELF NODEJS: \`${e.message}\``);
+			msg.channel.send(`Error: \`${e.message}\``);
 		}
 	} else {
-		msg.reply("You dont have Permission to use this command, consider asking a fucking admin or shit")
+		msg.reply("Missing Permission")
 	}
 }
